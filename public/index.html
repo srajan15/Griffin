@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Griffin</title>
+    <link rel="icon"href="style/favicon.ico">
+    <meta name="description" content="A chat App built with socket.io and opensource project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="#">Griffin</a></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#join">Join</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+            </div>
+        </nav>
+        <div class='main-heading'>
+            <p>Welcome to Griffin An Open Source chat App</p>
+            <button class="know__btn"><a href="#about">Know More</a></button>
+        </div>
+    </header>
+
+    <div id="about">
+        <h1 class="about__heading">About-</h1>
+        Welcome to Griffin!
+        Griffin is an open source chat application made with nodejs, express or socket.io library you can create room or
+        join room in Griffin it has minimum features soon i will add more new and awesome features
+    </div>
+
+    <h1 id="join">Join now-</h1>
+    <form action="chat.html" class="form">
+        <label for="name">Username:</label>
+        <input type="text" name="username" id="name" placeholder="Username" required><br>
+        <label for="room">Room:</label>
+        <input type="text" name="room" placeholder="Room" required class="input__room"><br>
+        <button class="submit__btn">Submit</button>
+    </form>
+
+
+
+    <script src="./app/app.js" async defer></script>
+</body>
+
+</html>

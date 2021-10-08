@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ephesis&display=swap');
+
+:root{
+    --main_heading : rgb(13, 13, 14);
+    --bg-color: rgb(255, 184, 220);
+    --hover-nav: rgb(202, 155, 94);
+    --nav-background: aliceblue;
+    --typo-color: black;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    background: url("dev.jpg") no-repeat center fixed;
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    z-index:1;
+    position:relative;
+}
+nav{
+    position:sticky;
+    top:0;
+    background:var(--nav-background);
+    display : flex;
+    width : 100%;
+    justify-content: space-between;
+    height:10vh;
+
+}
+ul{
+    margin-left: auto;
+    display : flex;
+    width:50%;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+ul li a{
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color : var(--typo-color);
+  
+}
+li a:hover{
+    color:var(--hover-nav);
+    transition: all .2s ease-in-out;
+}
+
+.logo a{
+    font-family: 'Rubik Beastly', cursive;
+    font-size : 1.8rem ;
+    text-transform: uppercase;
+    margin : .5rem 0 0 .5rem;
+    position : absolute;
+    list-style-type: none;
+    color: var(--typo-color);
+    text-shadow: 2px 2px antiquewhite;
+}
+.main-heading{
+    position:absolute;
+    color:var(--main_heading);
+    font-weight: bold;
+    font-family: 'Gluten', cursive;
+    z-index: -1;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width:50%;
+    top:50%;
+    left:40%;
+    transform: translate(-50%, -50%);
+}
+.know__btn{
+    border:2px solid var(--main_heading);
+    width:10rem;
+    padding:.3rem;
+    cursor: pointer;
+    background-color:bisque;
+    text-decoration: none;
+    color:var(--typo-color);
+
+}
+.know__btn a{
+    text-decoration:none;
+    color:var(--typo-color);
+}
+.about__heading{
+    text-transform: uppercase;
+    padding:1rem;
+}
+#about, .about{
+    padding:1rem;
+    text-transform: capitalize;
+    font-weight:600;
+
+}
+#join{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding:1rem;
+
+
+}
+.form{
+    text-align: center;
+    margin:2rem;
+}
+input{
+    border-radius: .1rem;
+    padding:.5rem;
+    margin:.5rem;
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid black;
+    width:30%;
+    background-color:rgb(240, 228, 228);
+}
+input[type="text"]{
+    border: 2px solid black;
+
+}
+.input__room{
+    border-radius: .1rem;
+    padding:.5rem;
+    margin:.5rem 0 1rem 1.5rem;
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid black;
+    width:30%;
+
+}
+.submit__btn{
+    width:4rem;
+    position:absolute;
+    padding:.5rem;
+    border:2px solid black;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+@media screen and (max-width:350px){
+    .hamburger-menu{
+        cursor: pointer;
+        text-align: center;
+        
+    }
+    .item1, .item2, .item3{
+        margin:10px;
+        width:35px;
+        padding:2px;
+        background-color:black;
+        transition: all 0.4s ease-in-out;
+    }
+    .change .item1{
+        transform: translate(9px,9px) rotate(45deg);
+    }
+    .change .item2{
+        display:none;
+    }
+    .change .item3{
+        transform: translate(9px,-1px) rotate(-45deg);
+
+    }
+    nav{
+        z-index: 5;
+    }
+   nav.change_one{
+        height:30vh;
+        transition: all .5s ease-in;
+        z-index:-2;
+        
+    }
+    ul{
+        flex-direction:column;
+        width:40%;
+        display:none;
+        
+    }
+    ul.open{
+        display:flex;
+        transition: all 1s ease-in-out;
+    }
+    .logo a{
+        position:static;
+        line-height: 2;
+    }
+    
+
+}

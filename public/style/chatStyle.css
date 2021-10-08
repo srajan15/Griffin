@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+header{
+    display: flex;
+    background-color: azure;
+
+}
+.user-sidebar{
+    max-width: 15rem;
+    padding:1rem 2rem 1rem 2rem;
+    overflow-y:scroll;
+    color: #fff;
+    background-color:rgb(80, 70, 70);
+    height: 100vh;
+    
+}
+li{
+    list-style: none;
+}
+.chat-container{
+    flex-grow: 1;
+    flex-direction: column;
+    max-height: 100vh;
+    display: flex;
+    border:2px solid black;
+}
+.chat-message{
+    overflow-y: scroll;
+    flex-grow: 1;
+    padding:1.4rem 1.4rem 0 1.4rem;
+    
+
+}
+.chat-form{
+    display: flex;
+    flex-shrink: 0;
+    margin-top:15px;
+    margin-bottom: 1rem;
+
+}
+.chat-form form{
+    display: flex;
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+.chat-form input{
+    flex-grow:1;
+    width:100%;
+    padding: 12px;
+    margin: 0 16px 0 5px;
+    border-radius: 2px;
+    border:1px solid lightgreen;
+    box-shadow: 2px 2px 2px black;
+}
+.location__btn{
+    border:1px solid black;
+    background-color: rgb(157, 70, 238);
+    padding:.3rem;
+    margin-right: 3px;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 3px;
+}
+.form__btn{
+    border:1px solid black;
+    box-shadow: 2px 2px 2px black;
+    background-color: rgb(157, 70, 238);
+    padding:.5rem;
+    border-radius: 3px;
+    margin-left:.3rem;
+
+}
+.message{
+    margin-bottom: 16px;
+}
+.message__meta{
+    margin-right:.7rem;
+}
+.message__name, .user__name{
+    font-weight: bold;
+}
